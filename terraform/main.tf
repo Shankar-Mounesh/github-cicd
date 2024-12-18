@@ -2,7 +2,7 @@ provider "aws" {
   region = "us-east-1"
 }
 
-resource "aws_s3_bucket" "shankar_s3" {
+resource "aws_s3_bucket" "example" {
   bucket = "shankar-bucket-${random_id.bucket_id.hex}"
   acl    = "private"
 
